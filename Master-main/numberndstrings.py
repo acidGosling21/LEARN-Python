@@ -94,5 +94,41 @@ word = word.strip('&*?')
 word = word.lstrip()
 print(word)
 
+#   Split and Join function (equivalent to strtok func in C)
+
+#   Split function will separate a string literal into a list
+#   If no separator indicated, python will try to use whitespaces to separate values
+months = 'Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec'
+print(months.split(','))
+
+#   another example using escape sequences
+word = '\lorem\nipsum\tdolor\nsit amet'
+print(word.split())
+
+#   Join function join() will bring together the list items to form a string value.
+groc = ['bread', 'eggs', 'sugar', 'salt']
+print('Grocery List:', ', '.join(groc)) # join the list using comma (', ')
+
+#   Replace function replace()
+#   takes on 3 arguments (string to be replaced, string to replace, number of times the replacement occur (optional))
+dessert = 'chocolate ice cream with chocolate coating'
+print(dessert.replace('chocolate', 'vanilla', 1))  # if optional parameter it will change all instances it can find, for this we have 2.
+
+#   Case string
+#   capitalize() - capitalize the first word of the string
+#   title()      - capitalizes the first letter of each word
+#   upper()      - capitalizes all the letters in the string
+#   lower()      - converts the letter to lowercase
+#   swapcase()   - changes the case from upper to lowercase and vice versa
+title = 'noli me tangere'
+print(title.capitalize())
+print(title.title())
+print(title.upper())
+print(title.lower())
+print(title.swapcase())
+
+
+
+
 
 
